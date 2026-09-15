@@ -18,9 +18,9 @@ export default function Header() {
   return (
     <header className="sticky top-0 z-50 border-b border-line/70 bg-cream/85 backdrop-blur-md">
       <div className="mx-auto flex max-w-[1600px] items-center justify-between px-6 py-5 sm:px-10 lg:px-12">
-        <span className="font-display text-sm tracking-widest text-ink">
+        <a href="/" className="cursor-pointer font-display text-sm tracking-widest text-ink">
           CALVIN CHOU
-        </span>
+        </a>
 
         <nav className="hidden items-center gap-9 md:flex">
           {NAV_LINKS.map((link) => (

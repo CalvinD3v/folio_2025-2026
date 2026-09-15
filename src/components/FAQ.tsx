@@ -3,8 +3,10 @@
 import { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { Minus, Plus } from "lucide-react";
-import PlaceholderImage from "./PlaceholderImage";
+import Image from "next/image";
+// import PlaceholderImage from "./PlaceholderImage";
 import Reveal, { RevealGroup, RevealItem } from "./Reveal";
+import ParallaxLayer from "./ParallaxLayer";
 
 const QUESTIONS = [
   {
@@ -35,7 +37,7 @@ export default function FAQ() {
   return (
     <section className="mx-auto max-w-[1600px] px-6 py-20 sm:px-10 lg:px-12">
       <Reveal>
-        <h2 className="font-serif text-4xl text-ink sm:text-5xl">
+        <h2 className="font-display text-4xl text-ink sm:text-5xl text-left">
           Frequently Asked Questions
         </h2>
       </Reveal>
@@ -90,17 +92,16 @@ export default function FAQ() {
 
         <Reveal delay={0.15}>
           <div className="group relative aspect-[16/10] w-full overflow-hidden rounded-2xl">
-            <PlaceholderImage
-              palette="ink"
-              label="At Work"
-              className="h-full w-full transition-transform duration-500 group-hover:scale-105"
-            />
-            <a
-              href="/about"
-              className="absolute right-5 bottom-5 rounded-full bg-ink px-5 py-2.5 text-xs font-medium tracking-wide text-cream transition-transform hover:scale-105 active:scale-95"
-            >
-              MORE ABOUT ME
-            </a>
+            <ParallaxLayer strength={28}>
+              <Image
+                src="/images/calvin-portrait.jpg"
+                alt="Calvin Chou at work"
+                fill
+                priority
+                sizes="(min-width: 1024px) 420px, 100vw"
+                className="object-cover transition-transform duration-500 hover:scale-[1.02]"
+              />
+            </ParallaxLayer>
           </div>
           <div className="mt-6 border-t border-line pt-6">
             <p className="text-xs font-semibold tracking-wide text-faint uppercase">

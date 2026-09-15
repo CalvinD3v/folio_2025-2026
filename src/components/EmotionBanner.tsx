@@ -8,7 +8,7 @@ export default function EmotionBanner() {
       <Reveal className="group relative aspect-[21/9] w-full overflow-hidden rounded-[999px] max-lg:rounded-[3rem]">
         <ParallaxLayer strength={50}>
           <Image
-            src="/images/latest-project.jpg"
+            src="/images/commision-mapper.jpeg"
             alt="Latest project — FinWise budgeting app shown on a laptop"
             fill
             sizes="100vw"
@@ -16,12 +16,12 @@ export default function EmotionBanner() {
           />
         </ParallaxLayer>
         <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/45 via-black/0 to-transparent" />
-        <div className="absolute bottom-8 left-8 sm:bottom-12 sm:left-14">
+        <div className="absolute bottom-8 left-8 sm:bottom-12 sm:left-14 pl-40">
           <p className="font-serif text-2xl text-white sm:text-4xl">
-            Design with Emotion,
+            Commission Mapper,
           </p>
           <p className="font-serif text-2xl text-white/85 italic sm:text-4xl">
-            Build to Last
+            An AI-powered tool for mapping and visualizing commission structures.
           </p>
         </div>
       </Reveal>

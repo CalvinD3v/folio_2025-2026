@@ -40,7 +40,7 @@ export default function Testimonials() {
         <p className="text-xs font-semibold tracking-widest text-faint uppercase">
           Testimonial
         </p>
-        <h2 className="mt-2 font-serif text-4xl text-ink sm:text-5xl">
+        <h2 className="mt-2 font-display text-4xl text-ink sm:text-5xl">
           What Our Customers Are Saying
         </h2>
       </Reveal>

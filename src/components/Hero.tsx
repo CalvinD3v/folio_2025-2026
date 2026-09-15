@@ -38,7 +38,7 @@ export default function Hero() {
         >
           <ParallaxLayer strength={28}>
             <Image
-              src="/images/calvin-portrait.jpg"
+              src="/images/calvin-about-portrait.jpg"
               alt="Calvin Chou at work"
               fill
               priority
@@ -54,7 +54,7 @@ export default function Hero() {
         <div className="flex flex-col justify-between gap-8 pt-6 pb-6">
           <Reveal
             delay={0.15}
-            className="grid grid-cols-3 gap-6 border-b border-line pb-8"
+            className="grid grid-cols-3 gap-6 border-b border-line pb-8 text-center"
           >
             {STATS.map((stat) => (
               <div key={stat.label}>
