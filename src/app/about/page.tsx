@@ -5,10 +5,27 @@ import SkillsGrid from "@/components/SkillsGrid";
 import Experience from "@/components/Experience";
 import Footer from "@/components/Footer";
 
+const title = "About — Calvin Chou";
+const description =
+  "Full-stack developer and founder of Codestudio — 9+ years shipping web and mobile products end-to-end.";
+
 export const metadata: Metadata = {
-  title: "About — Calvin Chou",
-  description:
-    "Full-stack developer and founder of Codestudio — 9+ years shipping web and mobile products end-to-end.",
+  title,
+  description,
+  openGraph: {
+    title,
+    description,
+    url: "/about",
+    siteName: "Calvin Chou",
+    type: "profile",
+    images: [{ url: "/images/calvin-about-portrait.jpg" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title,
+    description,
+    images: ["/images/calvin-about-portrait.jpg"],
+  },
 };
 
 export default function AboutPage() {

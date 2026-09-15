@@ -68,7 +68,7 @@ export default function EmotionBanner() {
         <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/45 via-black/0 to-transparent" />
         <div className="pointer-events-none absolute inset-0 bg-gradient-to-r from-black/40 via-black/0 to-transparent" />
 
-        <div className="absolute bottom-8 left-8 -translate-y-1/2 sm:left-14">
+        <div className="absolute bottom-8 left-8 sm:bottom-12 sm:left-14">
           <p className="font-serif text-2xl text-white sm:text-4xl">
             Commission Mapper,
           </p>

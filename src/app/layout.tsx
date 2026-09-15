@@ -46,10 +46,30 @@ const plusJakarta = Plus_Jakarta_Sans({
   weight: ["400", "500", "600"],
 });
 
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000";
+const title = "Calvin Chou — An Architect";
+const description =
+  "Calvin Chou's portfolio — building the future of the web from blueprint to code to market.";
+
 export const metadata: Metadata = {
-  title: "Calvin Chou — An Architect",
-  description:
-    "Calvin Chou's portfolio — building the future of the web from blueprint to code to market.",
+  metadataBase: new URL(siteUrl),
+  title,
+  description,
+  openGraph: {
+    title,
+    description,
+    url: "/",
+    siteName: "Calvin Chou",
+    type: "website",
+    locale: "en_ZA",
+    images: [{ url: "/images/calvin-about-portrait.jpg" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title,
+    description,
+    images: ["/images/calvin-about-portrait.jpg"],
+  },
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {

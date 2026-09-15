@@ -99,7 +99,7 @@ export default function ProjectShowcase() {
             className="aspect-[390/312]"
           />
           <PhotoTile
-            src="/images/nontokozo-duo-full.png"
+            src="/images/nontokozo-duo-full.jpg"
             alt="Brand identity project photography"
             label="Brand Identity & Website"
             className="aspect-[240/200]"

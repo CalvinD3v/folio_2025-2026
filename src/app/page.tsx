@@ -7,7 +7,7 @@ import Collections from "@/components/Collections";
 import Offerings from "@/components/Offerings";
 // import TrendsBlog from "@/components/TrendsBlog";
 import ProjectShowcase from "@/components/ProjectShowcase";
-import LatestTrends from "@/components/LatestTrends";
+// import LatestTrends from "@/components/LatestTrends";
 import FAQ from "@/components/FAQ";
 import Testimonials from "@/components/Testimonials";
 import Contact from "@/components/Contact";
