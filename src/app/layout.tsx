@@ -8,6 +8,7 @@ import {
   Plus_Jakarta_Sans,
 } from "next/font/google";
 import "./globals.css";
+import SmoothScroll from "@/components/SmoothScroll";
 
 const playfair = Playfair_Display({
   variable: "--font-playfair",
@@ -57,7 +58,9 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       lang="en"
       className={`${playfair.variable} ${archivoBlack.variable} ${inter.variable} ${sansation.variable} ${poppins.variable} ${plusJakarta.variable} antialiased`}
     >
-      <body className="bg-cream text-ink font-sans">{children}</body>
+      <body className="bg-cream text-ink font-sans">
+        <SmoothScroll>{children}</SmoothScroll>
+      </body>
     </html>
   );
 }

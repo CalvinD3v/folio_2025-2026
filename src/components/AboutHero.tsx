@@ -8,19 +8,16 @@ import Reveal from "./Reveal";
 import SplitText from "./SplitText";
 
 const STATS = [
-  { value: "728", suffix: "+", label: "Total Projects" },
-  { value: "340", suffix: "+", label: "Clients & Brands" },
-  { value: "2017", suffix: "", label: "Since" },
+  { value: "9", suffix: "+", label: "Years Experience" },
+  { value: "7", suffix: "", label: "Companies & Clients" },
+  { value: "2017", suffix: "", label: "Founded Codestudio" },
 ];
 
-export default function Hero() {
+export default function AboutHero() {
   return (
-    <section
-      id="home"
-      className="mx-auto max-w-[1600px] px-6 pt-14 pb-20 sm:px-10 lg:px-12"
-    >
+    <section className="mx-auto max-w-[1600px] px-6 pt-14 pb-20 sm:px-10 lg:px-12">
       <h1 className="font-serif text-[15vw] leading-[0.85] font-black tracking-tight text-ink text-right sm:text-[13vw] lg:text-[9.5vw] lg:leading-[0.82] xl:text-[8.75rem]">
-        <SplitText text="AN ARCHITECT." />
+        <SplitText text="A FOUNDER." />
       </h1>
       <motion.p
         initial={{ opacity: 0, y: 16 }}
@@ -28,7 +25,8 @@ export default function Hero() {
         transition={{ duration: 0.6, delay: 0.15 }}
         className="mt-4 font-sansation text-right text-xl font-light text-muted sm:text-2xl"
       >
-        Building the future of the web from blueprint to code to market.
+        Full-stack developer and digital agency founder shipping web and
+        mobile products end-to-end since 2017.
       </motion.p>
 
       <div className="mt-10 grid gap-10 lg:grid-cols-[1.35fr_1fr]">
@@ -38,8 +36,8 @@ export default function Hero() {
         >
           <ParallaxLayer strength={28}>
             <Image
-              src="/images/calvin-portrait.jpg"
-              alt="Calvin Chou at work"
+              src="/images/calvin-about-portrait.jpg"
+              alt="Calvin Chou portrait"
               fill
               priority
               sizes="(min-width: 1024px) 420px, 100vw"
@@ -47,7 +45,7 @@ export default function Hero() {
             />
           </ParallaxLayer>
           <span className="absolute bottom-5 left-5 rounded-full bg-cream px-4 py-2 text-xs font-semibold tracking-wide text-ink">
-            CALVIN TSIETSI CHOU
+            FOUNDER · CODESTUDIO
           </span>
         </Reveal>
 
@@ -73,19 +71,18 @@ export default function Hero() {
 
           <Reveal delay={0.2}>
             <blockquote className="font-jakarta text-right text-lg leading-relaxed text-ink-soft sm:text-xl">
-              &ldquo;Early in my career&hellip;I had to choose between an
-              honest arrogance and a hypercritical humility&hellip; I
-              deliberately choose an honest arrogance, and I&apos;ve never
-              been sorry.&rdquo;
+              &ldquo;Comfortable wearing every hat in the room — writing the
+              code, designing the UX, scoping with clients, and managing the
+              infrastructure underneath it all.&rdquo;
               <footer className="mt-3 text-base text-muted">
-                &ndash; Frank Lloyd Wright
+                &ndash; Calvin Chou
               </footer>
             </blockquote>
           </Reveal>
 
           <Reveal delay={0.25} className="flex justify-start">
             <motion.a
-              href="#contact"
+              href="/#contact"
               whileHover={{ scale: 1.04 }}
               whileTap={{ scale: 0.97 }}
               className="flex items-center gap-3 rounded-full bg-ink px-6 py-3 text-sm font-medium tracking-wide text-cream"

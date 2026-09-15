@@ -8,24 +8,24 @@ import Reveal, { RevealGroup, RevealItem } from "./Reveal";
 
 const QUESTIONS = [
   {
-    q: "What types of furniture do you offer?",
-    a: "We specialize in custom-made furniture for living rooms, bedrooms, dining rooms, home offices, and more. From chairs and tables to cabinets and desks, we offer a wide range of options to fit your style and needs.",
+    q: "What do you actually do?",
+    a: "I'm a full-stack developer and digital agency founder — 9+ years shipping web and mobile products end-to-end, from .NET and Node.js APIs through React, Next.js, Nuxt, and React Native interfaces.",
   },
   {
-    q: "Can I customize the design of my furniture?",
-    a: "Yes — every piece can be tailored in dimension, material, and finish to fit your space and taste.",
+    q: "What is Codestudio?",
+    a: "The full-service digital agency I founded in 2017. I ran it alongside senior engineering roles for eight years before going full-time on it in 2025 — brand, design, hosting, and software for SMB clients across South Africa and abroad.",
   },
   {
-    q: "How long does it take to complete an order?",
-    a: "Most custom builds take between four and eight weeks depending on complexity and material availability.",
+    q: "What's your stack?",
+    a: "React, Next.js, Nuxt.js, Vue, TypeScript, and Tailwind on the front end; .NET (C#), Node.js, and GraphQL/REST on the back end; React Native for mobile. Plus Figma, Illustrator, and Photoshop for brand and UX/UI work.",
   },
   {
-    q: "Do you offer delivery and installation?",
-    a: "Yes, white-glove delivery and installation is available in all of our service areas.",
+    q: "Do you only write code, or design too?",
+    a: "Both, end to end — user research and wireframes through high-fidelity Figma prototypes, then the pixel-accurate build. Brand identities, style guides, and social/print collateral too.",
   },
   {
-    q: "What materials do you use for your furniture?",
-    a: "We work with sustainably sourced hardwoods, premium upholstery fabrics, and solid brass or iron hardware.",
+    q: "Can you help with hosting and infrastructure as well?",
+    a: "Yes — domains, managed hosting, DNS, SSL, deployments, monitoring, and uptime SLAs are part of the same integrated package, alongside Azure DevOps and Docker experience from running production platforms.",
   },
 ];
 
@@ -92,22 +92,26 @@ export default function FAQ() {
           <div className="group relative aspect-[16/10] w-full overflow-hidden rounded-2xl">
             <PlaceholderImage
               palette="ink"
-              label="Showroom"
+              label="At Work"
               className="h-full w-full transition-transform duration-500 group-hover:scale-105"
             />
-            <button className="absolute right-5 bottom-5 rounded-full bg-ink px-5 py-2.5 text-xs font-medium tracking-wide text-cream transition-transform hover:scale-105 active:scale-95">
-              READ MORE FAQ
-            </button>
+            <a
+              href="/about"
+              className="absolute right-5 bottom-5 rounded-full bg-ink px-5 py-2.5 text-xs font-medium tracking-wide text-cream transition-transform hover:scale-105 active:scale-95"
+            >
+              MORE ABOUT ME
+            </a>
           </div>
           <div className="mt-6 border-t border-line pt-6">
             <p className="text-xs font-semibold tracking-wide text-faint uppercase">
-              Sed Ut Perspiciatis
+              Founder · Codestudio
             </p>
             <p className="mt-2 text-sm leading-relaxed text-muted">
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-              accusantium doloremque laudantium, totam rem aperiam, eaque
-              ipsa quae ab illo inventore veritatis et quasi architecto
-              beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem.
+              Running Codestudio since 2017, I&apos;ve helped small and
+              mid-sized businesses grow through brand, design, hosting, and
+              software — comfortable wearing every hat in the room, from
+              writing the code to designing the UX to managing the
+              infrastructure underneath it all.
             </p>
           </div>
         </Reveal>
