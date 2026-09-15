@@ -42,7 +42,7 @@ export default function EmotionBanner() {
 
   return (
     <section className="mx-auto max-w-[1600px] px-6 py-16 sm:px-10 lg:px-12">
-      <Reveal className="group relative aspect-[21/9] w-full overflow-hidden rounded-2x max-lg:rounded-[3rem]">
+      <Reveal className="group relative aspect-[21/9] w-full overflow-hidden rounded-[2rem] max-lg:rounded-[3rem]">
         <AnimatePresence initial={false} mode="popLayout">
           <motion.div
             key={index}
@@ -68,13 +68,12 @@ export default function EmotionBanner() {
         <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/45 via-black/0 to-transparent" />
         <div className="pointer-events-none absolute inset-0 bg-gradient-to-r from-black/40 via-black/0 to-transparent" />
 
-        <div className="absolute top-1/2 left-8 -translate-y-1/2 sm:left-14">
+        <div className="absolute bottom-8 left-8 -translate-y-1/2 sm:left-14">
           <p className="font-serif text-2xl text-white sm:text-4xl">
             Commission Mapper,
           </p>
           <p className="font-serif text-2xl text-white/85 italic sm:text-4xl">
-            An AI-powered tool for mapping and visualizing commission
-            structures.
+            An AI-powered tool.
           </p>
         </div>
 
