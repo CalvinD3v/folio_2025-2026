@@ -28,6 +28,13 @@ const REVIEWS = [
     image: "/images/nontoko-profile.jpg",
     company: "Transgenerational Wealth",
   },
+  {
+    quote:
+      "Overall great experience! Calvin understood the vision behind Swenk’fontein and translated it into a digital profile that felt like our brand's future. Professional, creative, and reliable.",
+    name: "Phakiso Tsotesti",
+    image: "/images/phakiso-t.jpg",
+    company: "Swenk’fontein Clothing",
+  },
 ];
 
 export default function Testimonials() {
