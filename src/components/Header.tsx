@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { Menu, X, Zap } from "lucide-react";
+import Link from "next/link";
 
 const NAV_LINKS = [
   // { label: "Home", href: "/#home" },
@@ -35,7 +36,7 @@ export default function Header() {
         </nav>
 
         <motion.a
-          href="#contact"
+          href="/#contact"
           whileHover={{ scale: 1.04 }}
           whileTap={{ scale: 0.97 }}
           className="hidden items-center gap-2 rounded-full bg-ink px-5 py-2.5 font-jakarta text-sm font-medium text-cream sm:flex"
@@ -73,14 +74,14 @@ export default function Header() {
                   {link.label}
                 </a>
               ))}
-              <a
-                href="#contact"
+              <Link
+                href="/#contact"
                 onClick={() => setOpen(false)}
                 className="mt-2 flex items-center justify-center gap-2 rounded-full bg-ink px-5 py-2.5 font-jakarta text-sm font-medium text-cream"
               >
                 Start a Project
                 <Zap className="h-4 w-4 fill-yellow-400 text-yellow-400" strokeWidth={1.75} />
-              </a>
+              </Link>
             </div>
           </motion.nav>
         ) : null}
