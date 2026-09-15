@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { ArrowRight } from "lucide-react";
+import { Star } from "lucide-react";
 import { AnimatePresence, motion } from "framer-motion";
 import Image from "next/image";
 import Reveal from "./Reveal";
@@ -162,7 +162,7 @@ export default function Collections() {
               <Reveal delay={0.2} className="flex flex-col gap-3">
                 <button className="group flex w-fit items-center gap-2 text-sm font-semibold text-ink">
                   <span className="flex h-8 w-8 items-center justify-center rounded-full bg-ink text-cream transition-transform group-hover:translate-x-0.5">
-                    <ArrowRight className="h-4 w-4" />
+                    <Star className="h-4 w-4 fill-cream" />
                   </span>
                   MOST VALUED CLIENT
                 </button>
