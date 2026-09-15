@@ -3,11 +3,8 @@ import Hero from "@/components/Hero";
 import CreativityBand from "@/components/CreativityBand";
 import EmotionBanner from "@/components/EmotionBanner";
 import Collections from "@/components/Collections";
-// import CustomBuild from "@/components/CustomBuild";
 import Offerings from "@/components/Offerings";
-// import TrendsBlog from "@/components/TrendsBlog";
 import ProjectShowcase from "@/components/ProjectShowcase";
-// import LatestTrends from "@/components/LatestTrends";
 import FAQ from "@/components/FAQ";
 import Testimonials from "@/components/Testimonials";
 import Contact from "@/components/Contact";
@@ -22,11 +19,8 @@ export default function Home() {
         <CreativityBand />
         <EmotionBanner />
         <Collections />
-        {/* <CustomBuild /> */}
         <Offerings />
-        {/* <TrendsBlog /> */}
         <ProjectShowcase />
-        {/* <LatestTrends /> */}
         <FAQ />
         <Testimonials />
         <Contact />

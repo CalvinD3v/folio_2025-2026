@@ -4,7 +4,6 @@ import { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { Minus, Plus } from "lucide-react";
 import Image from "next/image";
-// import PlaceholderImage from "./PlaceholderImage";
 import Reveal, { RevealGroup, RevealItem } from "./Reveal";
 import ParallaxLayer from "./ParallaxLayer";
 
