@@ -93,12 +93,12 @@ export default function Collections() {
                 NONTOKOZO MANGQUKU
               </h3>
               <p className="mt-4 text-sm leading-relaxed text-muted">
-                From your logo design to brand guidelines to Lorem Ipsum is
-                simply dummy text of the printing and typesetting industry.
-                Lorem Ipsum has been the industry&apos;s standard dummy text
-                ever since 1966, when designers at Letraset and James Mosley.
+                From logo design and brand guidelines to a fully custom
+                website, I&apos;ve built and designed a range of projects for
+                Nontokozo Mangquku — bringing her brand to life across every
+                touchpoint, from first sketch to shipped code.
               </p>
-              <div className="mt-6 flex flex-wrap items-center gap-3">
+              <div className="mt-6 inline-flex items-center gap-1 rounded-full border border-line bg-panel p-1">
                 {TABS.map((t) => {
                   const isActive = t.key === tab;
                   return (
@@ -107,13 +107,26 @@ export default function Collections() {
                       type="button"
                       aria-pressed={isActive}
                       onClick={() => setTab(t.key)}
-                      className={`rounded-full px-5 py-2.5 text-sm font-medium transition-colors ${
-                        isActive
-                          ? "bg-ink text-cream"
-                          : "text-ink hover:bg-ink/5"
-                      }`}
+                      className="relative rounded-full px-5 py-2.5 text-sm font-medium"
                     >
-                      {t.label}
+                      {isActive ? (
+                        <motion.span
+                          layoutId="collections-toggle"
+                          className="absolute inset-0 rounded-full bg-ink"
+                          transition={{
+                            type: "spring",
+                            stiffness: 500,
+                            damping: 35,
+                          }}
+                        />
+                      ) : null}
+                      <span
+                        className={`relative z-10 transition-colors ${
+                          isActive ? "text-cream" : "text-ink"
+                        }`}
+                      >
+                        {t.label}
+                      </span>
                     </button>
                   );
                 })}
@@ -151,7 +164,7 @@ export default function Collections() {
                   <span className="flex h-8 w-8 items-center justify-center rounded-full bg-ink text-cream transition-transform group-hover:translate-x-0.5">
                     <ArrowRight className="h-4 w-4" />
                   </span>
-                  MORE COLLECTIONS
+                  MOST VALUED CLIENT
                 </button>
                 <div className="relative min-h-[140px] flex-1 overflow-hidden rounded-[2rem]">
                   <AnimatePresence mode="wait">

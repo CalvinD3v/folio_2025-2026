@@ -48,7 +48,7 @@ export default function ProjectShowcase() {
           <PhotoTile
             src="/images/ecommerce-platform.jpg"
             alt="E-commerce platform project screenshot"
-            label="E-Commerce Platform"
+            label="codestudio.co.za & billing system"
             className="aspect-[388/316]"
           />
           <PhotoTile
@@ -63,7 +63,7 @@ export default function ProjectShowcase() {
           <PhotoTile
             src="/images/team-workspace.jpg"
             alt="Team workspace dashboard project screenshot"
-            label="Team Workspace"
+            label="Codestudio.co.za Client Dashboard"
             className="h-full min-h-[280px] lg:min-h-0"
           />
         </RevealItem>
@@ -71,21 +71,21 @@ export default function ProjectShowcase() {
         <RevealItem className="flex flex-[390] flex-col gap-4">
           <PhotoTile
             src="/images/editorial-redesign.jpg"
-            alt="Editorial redesign project screenshot"
-            label="Editorial Redesign"
+            alt="Zeal Ecommerce Platform project screenshot"
+            label="Zeal Ecommerce Platform"
             className="aspect-[390/312]"
           />
           <div className="flex gap-4">
             <PhotoTile
               src="/images/product-launch.jpg"
               alt="Product Launch project screenshot"
-              label="Product Launch"
+              label="bi-me.co.za InsureTech"
               className="aspect-[179/125] flex-1"
             />
             <PhotoTile
               src="/images/news-portal.jpg"
-              alt="News Portal project screenshot"
-              label="News Portal"
+              alt="Rebranding & Logo Design project screenshot"
+              label="Logo & Rebranding"
               className="aspect-[179/125] flex-1"
             />
           </div>
@@ -94,14 +94,14 @@ export default function ProjectShowcase() {
         <RevealItem className="flex flex-[390] flex-col gap-4">
           <PhotoTile
             src="/images/event-ticketing-app.jpg"
-            alt="Event ticketing app project screenshot"
-            label="Event Ticketing App"
+            alt="Finance Tracking app project screenshot"
+            label="Finance Tracking App"
             className="aspect-[390/312]"
           />
           <PhotoTile
             src="/images/nontokozo-duo-full.png"
             alt="Brand identity project photography"
-            label="Brand Identity"
+            label="Brand Identity & Website"
             className="aspect-[240/200]"
           />
         </RevealItem>
