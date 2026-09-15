@@ -2,25 +2,31 @@
 
 import { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
-import { ChevronLeft, ChevronRight, Star } from "lucide-react";
-import PlaceholderImage from "./PlaceholderImage";
+import { ChevronLeft, ChevronRight } from "lucide-react";
+import Image from "next/image";
 import Reveal from "./Reveal";
 
 const REVIEWS = [
   {
     quote:
-      "Absolutely love the quality and design! The chair is not only stylish but also incredibly comfortable. Seamless customer service.",
-    name: "Amanda Reyes",
+      "I had the pleasure of working closely with Calvin, and he consistently impressed me with his ability to get things done. He has a rare talent for breaking down complex problems and finding practical, often innovative solutions. What stood out most was his decisiveness and ability to see the bigger picture, he kept the team focused on delivering real outcomes rather than just ticking boxes. Calvin brings tremendous value, and any team would be better for having him.",
+    name: "Tanaka M",
+    image: "/images/tanaka-m.jpg",
+    company: "Business Insurance Made Easy (BI-ME)",
   },
   {
     quote:
-      "Excellent service and stunning design. The product looks even better in person and adds so much character to our living space.",
-    name: "Sarah Whitfield",
+      "I would absolutely work with Calvin again given the chance. He has a real talent for transforming branding guides into code that meets all expectations—a true master of his craft.",
+    name: "Tumelo Mampuru",
+    image: "/images/tumelo-m.jpeg",
+    company: "Codetrics (Pty) Ltd",
   },
   {
     quote:
-      "The craftsmanship is outstanding. Every detail feels intentional, and the piece has become the centerpiece of our home.",
-    name: "Laura Kim",
+      "When it comes to building digital products, Calvin is a rare find. He combines technical expertise with a deep understanding of user experience, resulting in solutions that are both functional and delightful. His ability to navigate complex challenges and deliver high-quality results is truly impressive.",
+    name: "Nontokozo Mangquku",
+    image: "/images/nontoko-profile.jpg",
+    company: "Transgenerational Wealth",
   },
 ];
 
@@ -41,7 +47,7 @@ export default function Testimonials() {
           Testimonial
         </p>
         <h2 className="mt-2 font-display text-4xl text-ink sm:text-5xl">
-          What Our Customers Are Saying
+          What My Clients Are Saying
         </h2>
       </Reveal>
 
@@ -59,24 +65,28 @@ export default function Testimonials() {
             {pair.map((review) => (
               <div key={review.name} className="flex items-center gap-6">
                 <div className="flex-1">
-                  <span className="font-serif text-3xl leading-none text-accent">
-                    &ldquo;&rdquo;
-                  </span>
-                  <div className="mt-2 flex items-center gap-2">
-                    <div className="flex text-accent">
-                      {Array.from({ length: 5 }).map((_, i) => (
-                        <Star key={i} className="h-4 w-4 fill-accent" />
-                      ))}
-                    </div>
-                    <span className="text-sm font-semibold text-ink">5.0</span>
-                  </div>
                   <p className="mt-3 text-sm leading-relaxed text-body italic">
-                    &ldquo;{review.quote}&rdquo;
+                    <span className="font-serif text-3xl leading-none text-accent">
+                      &ldquo;
+                    </span>
+                    {review.quote}
+                    <span className="font-serif text-3xl leading-none text-accent">
+                      &rdquo;
+                    </span>
                   </p>
+                  <div className="mt-2 flex items-center gap-2">
+                    <span className="text-sm font-semibold text-ink">
+                      {review.company} -{" "}
+                    </span>
+                    <span className="text-sm text-ink">{review.name}</span>
+                  </div>
                 </div>
-                <PlaceholderImage
-                  palette="stone"
-                  className="h-24 w-24 shrink-0 rounded-2xl"
+                <Image
+                  src={review.image}
+                  alt={review.name}
+                  width={96}
+                  height={96}
+                  className="h-24 w-24 shrink-0 rounded-2xl object-cover"
                 />
               </div>
             ))}

@@ -48,7 +48,7 @@ export default function Contact() {
       className="mx-auto max-w-[1600px] px-6 py-20 sm:px-10 lg:px-12"
     >
       <Reveal>
-        <h2 className="font-serif text-4xl text-ink sm:text-5xl">
+        <h2 className="font-display text-4xl text-ink sm:text-5xl">
           Let&apos;s Start Your Project
         </h2>
         <p className="mt-4 max-w-xl text-sm leading-relaxed text-muted sm:text-base">
